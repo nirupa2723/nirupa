@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Tracking System</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="map"></div>
+
+   <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="drone.png" alt="Drone Logo">
+            <span>DroneTrack</span>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+            <li><a href="tracking.html">🚁 Tracking</a></li>
+            <li><a href="login.html">🔑 Login</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-toggle">🌙 Toggle Mode</button>
+</body>
+</html>

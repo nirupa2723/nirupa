@@ -1,0 +1,321 @@
+/* 🌍 Responsive & Adaptive Styles */
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+/* Light Mode */
+body.light-mode {
+    --bg-color: white;
+    --text-color: black;
+}
+
+/* 🌍 Responsive Map */
+#map {
+    width: 100%;
+    height: 60vh;
+    max-height: 600px;
+    min-height: 300px;
+}
+
+/* ✨ Navigation Bar */
+nav {
+    background: var(--bg-color);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: var(--primary-color);
+}
+
+/* 🍔 Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* 📱 Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: var(--bg-color);
+        width: 200px;
+        padding: 0px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* 🚀 Delivery Form */
+form {
+    margin: 80px auto;
+    max-width: 500px;
+    padding: 20px;
+    background: var(--secondary-color);
+    border-radius: 5px;
+    text-align: left;
+}
+
+form input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+form button {
+    width: 95%;
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #9ee7a2;
+}
+/* 🌍 Dark & Light Mode */
+:root {
+    --bg-color: black;
+    --text-color: white;
+    --primary-color: #4CAF50;
+    --secondary-color: #f4f4f4;
+}
+
+.light-mode {
+    --bg-color: white;
+    --text-color: black;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#tracking-page {
+    padding: 20px;
+    text-align: center;
+}
+
+#tracking-page h1 {
+    font-size: 28px;
+    color: var(--primary-color);
+}
+
+/* 📍 Map Styling */
+#map {
+    width: 100%;
+    height: 60vh;
+    max-height: 600px;
+    min-height: 300px;
+}
+
+/* 📌 Theme Toggle Button */
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: gray;
+}
+/* Login Page Styling */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #218838;
+}
+/* General Styles */
+body {
+    font-family: 'Georgia', bold;
+    margin: 0;
+    padding: 0;
+    background: url('dronetrack.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: left;
+}
+
+/* Light & Dark Mode */
+:root {
+    --bg-color: black;
+    --text-color: white;
+}
+
+body.light-mode {
+    --bg-color: white;
+    --text-color: black;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Navigation Bar */
+nav {
+    background: black;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation Menu */
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #d2b9e3;
+    text-shadow: 0px 0px 5px #e1cfed;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        width: 200px;
+        flex-direction: column;
+        text-align: right;
+        padding: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .nav-links.active {
+        display: flex;
+        transform: translateX(0);
+    }
+}
